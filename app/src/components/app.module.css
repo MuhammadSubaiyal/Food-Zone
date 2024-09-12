@@ -1,0 +1,144 @@
+.main {
+    background-color: #323334;
+
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 26px;
+
+    height: 110px;
+}
+
+.search input {
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 285px;
+    height: 20px;
+    padding: 20px;
+    color: white;
+    font-family: "century gothic";
+    font-size: 17px;
+}
+
+.search input::placeholder {
+    color: white;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 20px;
+}
+
+button {
+    background: #FF4343;
+    border-radius: 5px;
+    padding: 6px 12px 6px 12px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.filter button:hover {
+    background-color: #a10e0e;
+}
+
+.foodcontainer {
+    min-height: calc(100vh - 160px);
+    background-image: url("/images/bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.foodcard {
+    width: 340px;
+    height: 167px;
+    border: 0.66px solid;
+
+    border-image-source: radial-gradient(80.69% 208.78% at 108.28% 112.58%,
+            #eabfff 0%,
+            rgba(135, 38, 183, 0) 100%),
+        radial-gradient(80.38% 222.5% at -13.75% -12.36%,
+            #98f9ff 0%,
+            rgba(255, 255, 255, 0) 100%);
+
+    background: url(.png),
+        radial-gradient(90.16% 143.01% at 15.32% 21.04%,
+            rgba(165, 239, 255, 0.2) 0%,
+            rgba(110, 191, 244, 0.0447917) 77.08%,
+            rgba(70, 144, 213, 0) 100%);
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(13.1842px);
+
+    border-radius: 20px;
+
+    display: flex;
+    padding: 8px;
+
+}
+
+.foodinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.foodinfo h3 {
+    font-family: century gothic;
+    margin-top: 8px;
+    font-size: 16px;
+
+}
+
+.foodinfo p {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.foodinfo button {
+    font-size: 12px;
+}
+
+
+.foodcards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+@media (0 < width < 600px) {
+    .top {
+        height: 80px;
+        flex-direction: column;
+        padding: 8px 6px;
+    }
+
+    .search input {
+        margin-top: 7px;
+        width: 205px;
+        height: 14px;
+        padding: 16px;
+
+    }
+
+    .filter {
+        margin-top: 16px;
+        gap: 6px;
+        padding-bottom: 10px;
+    }
+}
